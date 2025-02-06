@@ -23,7 +23,7 @@ app.use(cors());
 
 // Loading Homepage
 app.get('/', (req, res) => {
-  res.sendFile('index.html');
+  res.send('index.html');
 });
 
 
