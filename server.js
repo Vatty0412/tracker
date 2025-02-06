@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
     <script src="index.js" defer></script>
     </html>
   `;
-  res.send();
+  res.send(page);
 });
 
 // connecting to DB
