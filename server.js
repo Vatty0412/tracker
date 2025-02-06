@@ -23,9 +23,8 @@ app.use(cors());
 
 // Loading Homepage
 app.get('/', (req, res) => {
-  res.send('index.html');
+  res.send(path.join(__dirname, 'index.html'));
 });
-
 
 // connecting to DB
 const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://vatty-0412:Yg59B6myIE993llF@attendance-data.kcd77.mongodb.net/tracker-db';
